@@ -11,6 +11,11 @@ export class DiscordService {
 
         const body = {
             content: message,
+            embeds: [
+                {
+                    image: { url: 'https://www.snsmarketing.es/blog/wp-content/uploads/2016/02/gifanimado.gif'}
+                }
+            ]
         }
 
         const resp = await fetch( this.discordWebhookUrl, {
